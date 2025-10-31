@@ -1,0 +1,977 @@
+{
+	"id": "1034c59b-87ff-40ce-8076-b4922656bfbe",
+	"revision": 0,
+	"last_node_id": 19,
+	"last_link_id": 23,
+	"nodes": [
+		{
+			"id": 14,
+			"type": "PreviewImage",
+			"pos": [
+				2784.376324793045,
+				196.85030512404808
+			],
+			"size": [
+				266.62959253505596,
+				314.18523556948867
+			],
+			"flags": {},
+			"order": 16,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "images",
+					"name": "images",
+					"type": "IMAGE",
+					"link": 12
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "PreviewImage"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 13,
+			"type": "ImageRotate",
+			"pos": [
+				2782.5176779588155,
+				90.09445266291968
+			],
+			"size": [
+				270,
+				58
+			],
+			"flags": {},
+			"order": 14,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "IMAGE",
+					"link": 11
+				},
+				{
+					"localized_name": "rotation",
+					"name": "rotation",
+					"type": "COMBO",
+					"widget": {
+						"name": "rotation"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						12,
+						17
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "ImageRotate"
+			},
+			"widgets_values": [
+				"180 degrees"
+			]
+		},
+		{
+			"id": 2,
+			"type": "ImageInvert",
+			"pos": [
+				1509.894190151022,
+				775.0589229316616
+			],
+			"size": [
+				140,
+				26
+			],
+			"flags": {},
+			"order": 5,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "IMAGE",
+					"link": 20
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						8,
+						21
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "ImageInvert"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 3,
+			"type": "PreviewImage",
+			"pos": [
+				1508.0112989758816,
+				863.176094962
+			],
+			"size": [
+				266.62959253505596,
+				314.18523556948867
+			],
+			"flags": {},
+			"order": 8,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "images",
+					"name": "images",
+					"type": "IMAGE",
+					"link": 21
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "PreviewImage"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 18,
+			"type": "NotifyAudioPassthrough",
+			"pos": [
+				1238.7091382166363,
+				772.3895394685209
+			],
+			"size": [
+				210,
+				112
+			],
+			"flags": {},
+			"order": 3,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 19
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						20
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "NotifyAudioPassthrough"
+			},
+			"widgets_values": [
+				"echo",
+				""
+			]
+		},
+		{
+			"id": 5,
+			"type": "ImageInvert",
+			"pos": [
+				2461.963558630265,
+				775.0589861371396
+			],
+			"size": [
+				140,
+				26
+			],
+			"flags": {},
+			"order": 13,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "IMAGE",
+					"link": 23
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						4
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "ImageInvert"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 4,
+			"type": "PreviewImage",
+			"pos": [
+				2458.856984128264,
+				858.2807485614248
+			],
+			"size": [
+				266.62959253505596,
+				314.18523556948867
+			],
+			"flags": {},
+			"order": 15,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "images",
+					"name": "images",
+					"type": "IMAGE",
+					"link": 4
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "PreviewImage"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 1,
+			"type": "PreviewImage",
+			"pos": [
+				1709.9628471074334,
+				198.43927847257862
+			],
+			"size": [
+				266.62959253505596,
+				314.18523556948867
+			],
+			"flags": {},
+			"order": 10,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "images",
+					"name": "images",
+					"type": "IMAGE",
+					"link": 18
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "PreviewImage"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 7,
+			"type": "Pause",
+			"pos": [
+				1329.7443984503307,
+				90.08425793427884
+			],
+			"size": [
+				270,
+				106
+			],
+			"flags": {},
+			"order": 4,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 14
+				},
+				{
+					"localized_name": "force_pause",
+					"name": "force_pause",
+					"type": "BOOLEAN",
+					"widget": {
+						"name": "force_pause"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						9
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "Pause"
+			},
+			"widgets_values": [
+				false,
+				"",
+				""
+			]
+		},
+		{
+			"id": 11,
+			"type": "Pause",
+			"pos": [
+				2415.5118011598597,
+				90.95028355822066
+			],
+			"size": [
+				270,
+				106
+			],
+			"flags": {},
+			"order": 12,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 16
+				},
+				{
+					"localized_name": "force_pause",
+					"name": "force_pause",
+					"type": "BOOLEAN",
+					"widget": {
+						"name": "force_pause"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						11
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "Pause"
+			},
+			"widgets_values": [
+				false,
+				"",
+				""
+			]
+		},
+		{
+			"id": 6,
+			"type": "Pause",
+			"pos": [
+				927.3331060788456,
+				771.7639392217394
+			],
+			"size": [
+				270,
+				106
+			],
+			"flags": {},
+			"order": 1,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 6
+				},
+				{
+					"localized_name": "force_pause",
+					"name": "force_pause",
+					"type": "BOOLEAN",
+					"widget": {
+						"name": "force_pause"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						19
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "Pause"
+			},
+			"widgets_values": [
+				false,
+				"",
+				""
+			]
+		},
+		{
+			"id": 8,
+			"type": "Pause",
+			"pos": [
+				1826.3587457220183,
+				773.1760949619994
+			],
+			"size": [
+				270,
+				106
+			],
+			"flags": {},
+			"order": 7,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 8
+				},
+				{
+					"localized_name": "force_pause",
+					"name": "force_pause",
+					"type": "BOOLEAN",
+					"widget": {
+						"name": "force_pause"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						22
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "Pause"
+			},
+			"widgets_values": [
+				false,
+				"",
+				""
+			]
+		},
+		{
+			"id": 19,
+			"type": "NotifyAudioPassthrough",
+			"pos": [
+				2184.83306882135,
+				775.2137498202763
+			],
+			"size": [
+				210,
+				112
+			],
+			"flags": {},
+			"order": 11,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 22
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						23
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "NotifyAudioPassthrough"
+			},
+			"widgets_values": [
+				"collect",
+				""
+			]
+		},
+		{
+			"id": 9,
+			"type": "LoadImage",
+			"pos": [
+				174.95408363077772,
+				405.164283929317
+			],
+			"size": [
+				395.35644654066255,
+				420.1167057417806
+			],
+			"flags": {},
+			"order": 0,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "COMBO",
+					"widget": {
+						"name": "image"
+					},
+					"link": null
+				},
+				{
+					"localized_name": "choose file to upload",
+					"name": "upload",
+					"type": "IMAGEUPLOAD",
+					"widget": {
+						"name": "upload"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						6,
+						13
+					]
+				},
+				{
+					"localized_name": "MASK",
+					"name": "MASK",
+					"type": "MASK",
+					"links": null
+				}
+			],
+			"properties": {
+				"Node name for S&R": "LoadImage"
+			},
+			"widgets_values": [
+				"ComfyUI_00346_.png",
+				"image"
+			]
+		},
+		{
+			"id": 16,
+			"type": "NotifyToastPassthrough",
+			"pos": [
+				2038.0894282498634,
+				90.09448139268349
+			],
+			"size": [
+				326.39825570647076,
+				136
+			],
+			"flags": {},
+			"order": 9,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 15
+				},
+				{
+					"localized_name": "detail",
+					"name": "detail",
+					"type": "STRING",
+					"widget": {
+						"name": "detail"
+					},
+					"link": null
+				},
+				{
+					"localized_name": "severity",
+					"name": "severity",
+					"type": "COMBO",
+					"widget": {
+						"name": "severity"
+					},
+					"link": null
+				},
+				{
+					"localized_name": "life",
+					"name": "life",
+					"type": "INT",
+					"widget": {
+						"name": "life"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						16
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "NotifyToastPassthrough"
+			},
+			"widgets_values": [
+				"Before second rotation",
+				"info",
+				3000
+			]
+		},
+		{
+			"id": 10,
+			"type": "ImageRotate",
+			"pos": [
+				1701.7468233952764,
+				89.23869359202442
+			],
+			"size": [
+				270,
+				58
+			],
+			"flags": {},
+			"order": 6,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "IMAGE",
+					"link": 9
+				},
+				{
+					"localized_name": "rotation",
+					"name": "rotation",
+					"type": "COMBO",
+					"widget": {
+						"name": "rotation"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						15,
+						18
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "ImageRotate"
+			},
+			"widgets_values": [
+				"180 degrees"
+			]
+		},
+		{
+			"id": 17,
+			"type": "NotifyToastOutput",
+			"pos": [
+				3112.1603333969947,
+				90.9503410177467
+			],
+			"size": [
+				296.63950473703426,
+				136
+			],
+			"flags": {},
+			"order": 17,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 17
+				},
+				{
+					"localized_name": "detail",
+					"name": "detail",
+					"type": "STRING",
+					"widget": {
+						"name": "detail"
+					},
+					"link": null
+				},
+				{
+					"localized_name": "severity",
+					"name": "severity",
+					"type": "COMBO",
+					"widget": {
+						"name": "severity"
+					},
+					"link": null
+				},
+				{
+					"localized_name": "life",
+					"name": "life",
+					"type": "INT",
+					"widget": {
+						"name": "life"
+					},
+					"link": null
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "NotifyToastOutput"
+			},
+			"widgets_values": [
+				"Back to normal",
+				"info",
+				3000
+			]
+		},
+		{
+			"id": 15,
+			"type": "NotifyToastPassthrough",
+			"pos": [
+				915.2359609622282,
+				90.95028355822123
+			],
+			"size": [
+				326.39825570647076,
+				136
+			],
+			"flags": {},
+			"order": 2,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 13
+				},
+				{
+					"localized_name": "detail",
+					"name": "detail",
+					"type": "STRING",
+					"widget": {
+						"name": "detail"
+					},
+					"link": null
+				},
+				{
+					"localized_name": "severity",
+					"name": "severity",
+					"type": "COMBO",
+					"widget": {
+						"name": "severity"
+					},
+					"link": null
+				},
+				{
+					"localized_name": "life",
+					"name": "life",
+					"type": "INT",
+					"widget": {
+						"name": "life"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						14
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "NotifyToastPassthrough"
+			},
+			"widgets_values": [
+				"Before first rotation",
+				"info",
+				3000
+			]
+		}
+	],
+	"links": [
+		[
+			4,
+			5,
+			0,
+			4,
+			0,
+			"IMAGE"
+		],
+		[
+			6,
+			9,
+			0,
+			6,
+			0,
+			"*"
+		],
+		[
+			8,
+			2,
+			0,
+			8,
+			0,
+			"*"
+		],
+		[
+			9,
+			7,
+			0,
+			10,
+			0,
+			"IMAGE"
+		],
+		[
+			11,
+			11,
+			0,
+			13,
+			0,
+			"IMAGE"
+		],
+		[
+			12,
+			13,
+			0,
+			14,
+			0,
+			"IMAGE"
+		],
+		[
+			13,
+			9,
+			0,
+			15,
+			0,
+			"*"
+		],
+		[
+			14,
+			15,
+			0,
+			7,
+			0,
+			"*"
+		],
+		[
+			15,
+			10,
+			0,
+			16,
+			0,
+			"*"
+		],
+		[
+			16,
+			16,
+			0,
+			11,
+			0,
+			"*"
+		],
+		[
+			17,
+			13,
+			0,
+			17,
+			0,
+			"*"
+		],
+		[
+			18,
+			10,
+			0,
+			1,
+			0,
+			"IMAGE"
+		],
+		[
+			19,
+			6,
+			0,
+			18,
+			0,
+			"*"
+		],
+		[
+			20,
+			18,
+			0,
+			2,
+			0,
+			"IMAGE"
+		],
+		[
+			21,
+			2,
+			0,
+			3,
+			0,
+			"IMAGE"
+		],
+		[
+			22,
+			8,
+			0,
+			19,
+			0,
+			"*"
+		],
+		[
+			23,
+			19,
+			0,
+			5,
+			0,
+			"IMAGE"
+		]
+	],
+	"groups": [],
+	"config": {},
+	"extra": {
+		"ds": {
+			"scale": 1,
+			"offset": [
+				0,
+				0
+			]
+		}
+	},
+	"version": 0.4
+}

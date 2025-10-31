@@ -1,0 +1,21 @@
+[project]
+name = "async-pause"
+description = "A node pack for pausing execution asynchronously and notifying the user"
+version = "1.0.0"
+license = {file = "LICENSE"} 
+classifiers = [
+    "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+Repository = "https://github.com/vilanele/ComfyUI-AsyncPause"
+Documentation = "https://github.com/vilanele/ComfyUI-AsyncPause"
+"Bug Tracker" = "https://github.com/vilanele/ComfyUI-AsyncPause/issues"
+
+[tool.comfy]
+PublisherId = "vilanele"
+DisplayName = "Async Pause"
+Icon = ""
+includes = [] 
+

@@ -1,0 +1,1225 @@
+{
+	"id": "abc06311-e257-4da6-abd1-a8c90a8f7e5c",
+	"revision": 0,
+	"last_node_id": 32,
+	"last_link_id": 23,
+	"nodes": [
+		{
+			"id": 26,
+			"type": "ImageInvert",
+			"pos": [
+				1047.8632579883702,
+				693.5903855022364
+			],
+			"size": [
+				260.573898997382,
+				43.088252586158205
+			],
+			"flags": {},
+			"order": 6,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "IMAGE",
+					"link": 21
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						22
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "ImageInvert"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 25,
+			"type": "PreviewImage",
+			"pos": [
+				2138.1665444838777,
+				428.44956971965394
+			],
+			"size": [
+				246.545867288306,
+				258
+			],
+			"flags": {},
+			"order": 10,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "images",
+					"name": "images",
+					"type": "IMAGE",
+					"link": 20
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "PreviewImage"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 27,
+			"type": "PreviewImage",
+			"pos": [
+				1786.2384809253408,
+				570.7411894312379
+			],
+			"size": [
+				299.0578744855611,
+				258
+			],
+			"flags": {},
+			"order": 11,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "images",
+					"name": "images",
+					"type": "IMAGE",
+					"link": 23
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "PreviewImage"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 17,
+			"type": "LoadImage",
+			"pos": [
+				321.69117169820106,
+				423.6448169381126
+			],
+			"size": [
+				274.080078125,
+				314
+			],
+			"flags": {},
+			"order": 0,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "COMBO",
+					"widget": {
+						"name": "image"
+					},
+					"link": null
+				},
+				{
+					"localized_name": "choose file to upload",
+					"name": "upload",
+					"type": "IMAGEUPLOAD",
+					"widget": {
+						"name": "upload"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"localized_name": "MASK",
+					"name": "MASK",
+					"type": "MASK",
+					"links": null
+				}
+			],
+			"properties": {
+				"Node name for S&R": "LoadImage"
+			},
+			"widgets_values": [
+				"ComfyUI_00351_.png",
+				"image"
+			]
+		},
+		{
+			"id": 29,
+			"type": "ImageRotate",
+			"pos": [
+				1041.7906019207567,
+				509.2232039002579
+			],
+			"size": [
+				270,
+				58
+			],
+			"flags": {},
+			"order": 5,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "IMAGE",
+					"link": 18
+				},
+				{
+					"localized_name": "rotation",
+					"name": "rotation",
+					"type": "COMBO",
+					"widget": {
+						"name": "rotation"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						19
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "ImageRotate"
+			},
+			"widgets_values": [
+				"180 degrees"
+			]
+		},
+		{
+			"id": 18,
+			"type": "Pause",
+			"pos": [
+				701.7934751765183,
+				328.3595800567073
+			],
+			"size": [
+				270,
+				106
+			],
+			"flags": {},
+			"order": 1,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 4
+				},
+				{
+					"localized_name": "force_pause",
+					"name": "force_pause",
+					"type": "BOOLEAN",
+					"widget": {
+						"name": "force_pause"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						7
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "Pause"
+			},
+			"widgets_values": [
+				true,
+				"",
+				""
+			]
+		},
+		{
+			"id": 19,
+			"type": "Pause",
+			"pos": [
+				701.7133383725582,
+				507.75003326159117
+			],
+			"size": [
+				270,
+				106
+			],
+			"flags": {},
+			"order": 2,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 5
+				},
+				{
+					"localized_name": "force_pause",
+					"name": "force_pause",
+					"type": "BOOLEAN",
+					"widget": {
+						"name": "force_pause"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						18
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "Pause"
+			},
+			"widgets_values": [
+				true,
+				"",
+				""
+			]
+		},
+		{
+			"id": 20,
+			"type": "Pause",
+			"pos": [
+				706.1744497199788,
+				693.6394773301179
+			],
+			"size": [
+				270,
+				106
+			],
+			"flags": {},
+			"order": 3,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 6
+				},
+				{
+					"localized_name": "force_pause",
+					"name": "force_pause",
+					"type": "BOOLEAN",
+					"widget": {
+						"name": "force_pause"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						21
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "Pause"
+			},
+			"widgets_values": [
+				true,
+				"",
+				""
+			]
+		},
+		{
+			"id": 4,
+			"type": "8769a89e-4c34-4122-b85a-9194ecccec47",
+			"pos": [
+				1414.3877737324578,
+				324.96785961238015
+			],
+			"size": [
+				282.05468973966254,
+				107.71534764713442
+			],
+			"flags": {},
+			"order": 4,
+			"mode": 0,
+			"inputs": [
+				{
+					"name": "any",
+					"type": "*",
+					"link": 7
+				}
+			],
+			"outputs": [
+				{
+					"name": "any",
+					"type": "*",
+					"links": [
+						17
+					]
+				}
+			],
+			"properties": {
+				"proxyWidgets": [
+					[
+						"1",
+						"force_pause"
+					],
+					[
+						"1",
+						"continue"
+					],
+					[
+						"1",
+						"cancel"
+					]
+				]
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 7,
+			"type": "ebef83ec-bdaf-499b-ae6c-bf47484b3809",
+			"pos": [
+				1417.9895366843284,
+				507.18700174444916
+			],
+			"size": [
+				280.380731052398,
+				108.28714764559777
+			],
+			"flags": {},
+			"order": 8,
+			"mode": 0,
+			"inputs": [
+				{
+					"name": "any",
+					"type": "*",
+					"link": 19
+				}
+			],
+			"outputs": [
+				{
+					"name": "any",
+					"type": "*",
+					"links": [
+						20
+					]
+				}
+			],
+			"properties": {
+				"proxyWidgets": [
+					[
+						"5",
+						"force_pause"
+					],
+					[
+						"5",
+						"continue"
+					],
+					[
+						"5",
+						"cancel"
+					]
+				]
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 13,
+			"type": "d607bcac-eba3-441e-9785-db106ea1fe28",
+			"pos": [
+				1420.428182155053,
+				689.3855153022644
+			],
+			"size": [
+				276.2919566221958,
+				109.43069529426884
+			],
+			"flags": {},
+			"order": 9,
+			"mode": 0,
+			"inputs": [
+				{
+					"name": "any",
+					"type": "*",
+					"link": 22
+				}
+			],
+			"outputs": [
+				{
+					"name": "any",
+					"type": "*",
+					"links": [
+						23
+					]
+				}
+			],
+			"properties": {
+				"proxyWidgets": [
+					[
+						"10",
+						"force_pause"
+					],
+					[
+						"10",
+						"continue"
+					],
+					[
+						"10",
+						"cancel"
+					]
+				]
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 28,
+			"type": "PreviewImage",
+			"pos": [
+				1842.531021314027,
+				161.7044930513464
+			],
+			"size": [
+				235.89136417010968,
+				258
+			],
+			"flags": {},
+			"order": 7,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "images",
+					"name": "images",
+					"type": "IMAGE",
+					"link": 17
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "PreviewImage"
+			},
+			"widgets_values": []
+		}
+	],
+	"links": [
+		[
+			4,
+			17,
+			0,
+			18,
+			0,
+			"*"
+		],
+		[
+			5,
+			17,
+			0,
+			19,
+			0,
+			"*"
+		],
+		[
+			6,
+			17,
+			0,
+			20,
+			0,
+			"*"
+		],
+		[
+			7,
+			18,
+			0,
+			4,
+			0,
+			"*"
+		],
+		[
+			17,
+			4,
+			0,
+			28,
+			0,
+			"IMAGE"
+		],
+		[
+			18,
+			19,
+			0,
+			29,
+			0,
+			"IMAGE"
+		],
+		[
+			19,
+			29,
+			0,
+			7,
+			0,
+			"*"
+		],
+		[
+			20,
+			7,
+			0,
+			25,
+			0,
+			"IMAGE"
+		],
+		[
+			21,
+			20,
+			0,
+			26,
+			0,
+			"IMAGE"
+		],
+		[
+			22,
+			26,
+			0,
+			13,
+			0,
+			"*"
+		],
+		[
+			23,
+			13,
+			0,
+			27,
+			0,
+			"IMAGE"
+		]
+	],
+	"groups": [],
+	"definitions": {
+		"subgraphs": [
+			{
+				"id": "8769a89e-4c34-4122-b85a-9194ecccec47",
+				"version": 1,
+				"state": {
+					"lastGroupId": 0,
+					"lastNodeId": 3,
+					"lastLinkId": 3,
+					"lastRerouteId": 0
+				},
+				"revision": 0,
+				"config": {},
+				"name": "Pause Audio Before",
+				"inputNode": {
+					"id": -10,
+					"bounding": [
+						1931.185878311414,
+						1317.8450144869928,
+						120,
+						60
+					]
+				},
+				"outputNode": {
+					"id": -20,
+					"bounding": [
+						2760.859783099058,
+						1317.8450144869928,
+						120,
+						60
+					]
+				},
+				"inputs": [
+					{
+						"id": "4ea97087-033e-4e5e-8804-b1f9f557f601",
+						"name": "any",
+						"type": "*",
+						"linkIds": [
+							3
+						],
+						"pos": [
+							2031.185878311414,
+							1337.8450144869928
+						]
+					}
+				],
+				"outputs": [
+					{
+						"id": "e713e02d-2f67-4cd8-9b3b-b07b1f07ac25",
+						"name": "any",
+						"type": "*",
+						"linkIds": [
+							2
+						],
+						"pos": [
+							2780.859783099058,
+							1337.8450144869928
+						]
+					}
+				],
+				"widgets": [],
+				"nodes": [
+					{
+						"id": 1,
+						"type": "Pause",
+						"pos": [
+							2430.859783099058,
+							1321.1285759839107
+						],
+						"size": [
+							270,
+							106
+						],
+						"flags": {},
+						"order": 0,
+						"mode": 0,
+						"inputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"link": 1
+							},
+							{
+								"localized_name": "force_pause",
+								"name": "force_pause",
+								"type": "BOOLEAN",
+								"widget": {
+									"name": "force_pause"
+								},
+								"link": null
+							}
+						],
+						"outputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"links": [
+									2
+								]
+							}
+						],
+						"properties": {
+							"Node name for S&R": "Pause"
+						},
+						"widgets_values": [
+							false,
+							"",
+							""
+						]
+					},
+					{
+						"id": 3,
+						"type": "NotifyAudioPassthrough",
+						"pos": [
+							2118.6639070435313,
+							1322.2377426816977
+						],
+						"size": [
+							210,
+							100
+						],
+						"flags": {},
+						"order": 1,
+						"mode": 0,
+						"inputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"link": 3
+							}
+						],
+						"outputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"links": [
+									1
+								]
+							}
+						],
+						"properties": {
+							"Node name for S&R": "NotifyAudioPassthrough"
+						},
+						"widgets_values": [
+							"notification",
+							""
+						]
+					}
+				],
+				"groups": [],
+				"links": [
+					{
+						"id": 1,
+						"origin_id": 3,
+						"origin_slot": 0,
+						"target_id": 1,
+						"target_slot": 0,
+						"type": "*"
+					},
+					{
+						"id": 2,
+						"origin_id": 1,
+						"origin_slot": 0,
+						"target_id": -20,
+						"target_slot": 0,
+						"type": "*"
+					},
+					{
+						"id": 3,
+						"origin_id": -10,
+						"origin_slot": 0,
+						"target_id": 3,
+						"target_slot": 0,
+						"type": "*"
+					}
+				],
+				"extra": {}
+			},
+			{
+				"id": "ebef83ec-bdaf-499b-ae6c-bf47484b3809",
+				"version": 1,
+				"state": {
+					"lastGroupId": 0,
+					"lastNodeId": 6,
+					"lastLinkId": 4,
+					"lastRerouteId": 0
+				},
+				"revision": 0,
+				"config": {},
+				"name": "Pause Audio After",
+				"inputNode": {
+					"id": -10,
+					"bounding": [
+						2398.2738908682772,
+						1336.3748689061326,
+						120,
+						60
+					]
+				},
+				"outputNode": {
+					"id": -20,
+					"bounding": [
+						3217.572596708074,
+						1336.3748689061326,
+						120,
+						60
+					]
+				},
+				"inputs": [
+					{
+						"id": "8f8d9c03-8771-42db-84b8-2945478c1a7b",
+						"name": "any",
+						"type": "*",
+						"linkIds": [
+							2
+						],
+						"pos": [
+							2498.2738908682772,
+							1356.3748689061326
+						]
+					}
+				],
+				"outputs": [
+					{
+						"id": "dd09d192-bb5c-492f-8e38-e666d93e69ae",
+						"name": "any",
+						"type": "*",
+						"linkIds": [
+							4
+						],
+						"pos": [
+							3237.572596708074,
+							1356.3748689061326
+						]
+					}
+				],
+				"widgets": [],
+				"nodes": [
+					{
+						"id": 5,
+						"type": "Pause",
+						"pos": [
+							2567.9196162176086,
+							1344.096553362326
+						],
+						"size": [
+							270,
+							106
+						],
+						"flags": {},
+						"order": 0,
+						"mode": 0,
+						"inputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"link": 2
+							},
+							{
+								"localized_name": "force_pause",
+								"name": "force_pause",
+								"type": "BOOLEAN",
+								"widget": {
+									"name": "force_pause"
+								},
+								"link": null
+							}
+						],
+						"outputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"links": [
+									3
+								]
+							}
+						],
+						"properties": {
+							"Node name for S&R": "Pause"
+						},
+						"widgets_values": [
+							false,
+							"",
+							""
+						]
+					},
+					{
+						"id": 6,
+						"type": "NotifyAudioPassthrough",
+						"pos": [
+							2942.3956173748256,
+							1344.0965270303134
+						],
+						"size": [
+							210,
+							100
+						],
+						"flags": {},
+						"order": 1,
+						"mode": 0,
+						"inputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"link": 3
+							}
+						],
+						"outputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"links": [
+									4
+								]
+							}
+						],
+						"properties": {
+							"Node name for S&R": "NotifyAudioPassthrough"
+						},
+						"widgets_values": [
+							"cartoon",
+							""
+						]
+					}
+				],
+				"groups": [],
+				"links": [
+					{
+						"id": 2,
+						"origin_id": -10,
+						"origin_slot": 0,
+						"target_id": 5,
+						"target_slot": 0,
+						"type": "*"
+					},
+					{
+						"id": 3,
+						"origin_id": 5,
+						"origin_slot": 0,
+						"target_id": 6,
+						"target_slot": 0,
+						"type": "*"
+					},
+					{
+						"id": 4,
+						"origin_id": 6,
+						"origin_slot": 0,
+						"target_id": -20,
+						"target_slot": 0,
+						"type": "*"
+					}
+				],
+				"extra": {}
+			},
+			{
+				"id": "d607bcac-eba3-441e-9785-db106ea1fe28",
+				"version": 1,
+				"state": {
+					"lastGroupId": 0,
+					"lastNodeId": 12,
+					"lastLinkId": 5,
+					"lastRerouteId": 0
+				},
+				"revision": 0,
+				"config": {},
+				"name": "Pause Audio Before After",
+				"inputNode": {
+					"id": -10,
+					"bounding": [
+						2730.7577022311957,
+						1375.202964367903,
+						120,
+						60
+					]
+				},
+				"outputNode": {
+					"id": -20,
+					"bounding": [
+						3820.415308826302,
+						1375.202964367903,
+						120,
+						60
+					]
+				},
+				"inputs": [
+					{
+						"id": "87d9a18f-2a82-40fc-90b1-2236bccddd14",
+						"name": "any",
+						"type": "*",
+						"linkIds": [
+							5
+						],
+						"pos": [
+							2830.7577022311957,
+							1395.202964367903
+						]
+					}
+				],
+				"outputs": [
+					{
+						"id": "cfada954-93a6-4359-8a78-4113b254030f",
+						"name": "any",
+						"type": "*",
+						"linkIds": [
+							4
+						],
+						"pos": [
+							3840.415308826302,
+							1395.202964367903
+						]
+					}
+				],
+				"widgets": [],
+				"nodes": [
+					{
+						"id": 10,
+						"type": "Pause",
+						"pos": [
+							3208.152629988513,
+							1376.8847035532326
+						],
+						"size": [
+							270,
+							106
+						],
+						"flags": {},
+						"order": 0,
+						"mode": 0,
+						"inputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"link": 2
+							},
+							{
+								"localized_name": "force_pause",
+								"name": "force_pause",
+								"type": "BOOLEAN",
+								"widget": {
+									"name": "force_pause"
+								},
+								"link": null
+							}
+						],
+						"outputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"links": [
+									3
+								]
+							}
+						],
+						"properties": {
+							"Node name for S&R": "Pause"
+						},
+						"widgets_values": [
+							false,
+							"",
+							""
+						]
+					},
+					{
+						"id": 11,
+						"type": "NotifyAudioPassthrough",
+						"pos": [
+							2903.854922682788,
+							1377.4599000729147
+						],
+						"size": [
+							210,
+							100
+						],
+						"flags": {},
+						"order": 1,
+						"mode": 0,
+						"inputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"link": 5
+							}
+						],
+						"outputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"links": [
+									2
+								]
+							}
+						],
+						"properties": {
+							"Node name for S&R": "NotifyAudioPassthrough"
+						},
+						"widgets_values": [
+							"bottle",
+							""
+						]
+					},
+					{
+						"id": 12,
+						"type": "NotifyAudioPassthrough",
+						"pos": [
+							3564.2208679231176,
+							1376.8846772212185
+						],
+						"size": [
+							210,
+							100
+						],
+						"flags": {},
+						"order": 2,
+						"mode": 0,
+						"inputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"link": 3
+							}
+						],
+						"outputs": [
+							{
+								"localized_name": "any",
+								"name": "any",
+								"type": "*",
+								"links": [
+									4
+								]
+							}
+						],
+						"properties": {
+							"Node name for S&R": "NotifyAudioPassthrough"
+						},
+						"widgets_values": [
+							"bottle",
+							""
+						]
+					}
+				],
+				"groups": [],
+				"links": [
+					{
+						"id": 3,
+						"origin_id": 10,
+						"origin_slot": 0,
+						"target_id": 12,
+						"target_slot": 0,
+						"type": "*"
+					},
+					{
+						"id": 2,
+						"origin_id": 11,
+						"origin_slot": 0,
+						"target_id": 10,
+						"target_slot": 0,
+						"type": "*"
+					},
+					{
+						"id": 4,
+						"origin_id": 12,
+						"origin_slot": 0,
+						"target_id": -20,
+						"target_slot": 0,
+						"type": "*"
+					},
+					{
+						"id": 5,
+						"origin_id": -10,
+						"origin_slot": 0,
+						"target_id": 11,
+						"target_slot": 0,
+						"type": "*"
+					}
+				],
+				"extra": {}
+			}
+		]
+	},
+	"config": {},
+	"extra": {
+		"ds": {
+			"scale": 1,
+			"offset": [
+				0,
+				0
+			]
+		}
+	},
+	"version": 0.4
+}

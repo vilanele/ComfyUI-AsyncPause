@@ -1,0 +1,314 @@
+{
+	"id": "60d167ee-f632-4924-988c-43bc2be9c018",
+	"revision": 0,
+	"last_node_id": 12,
+	"last_link_id": 13,
+	"nodes": [
+		{
+			"id": 1,
+			"type": "PreviewImage",
+			"pos": [
+				1049.479490078068,
+				497.65793838443534
+			],
+			"size": [
+				266.62959253505596,
+				314.18523556948867
+			],
+			"flags": {},
+			"order": 2,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "images",
+					"name": "images",
+					"type": "IMAGE",
+					"link": 1
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "PreviewImage"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 3,
+			"type": "LoadImage",
+			"pos": [
+				569.8490723867592,
+				329.4440700154633
+			],
+			"size": [
+				274.080078125,
+				314
+			],
+			"flags": {},
+			"order": 0,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "COMBO",
+					"widget": {
+						"name": "image"
+					},
+					"link": null
+				},
+				{
+					"localized_name": "choose file to upload",
+					"name": "upload",
+					"type": "IMAGEUPLOAD",
+					"widget": {
+						"name": "upload"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						2
+					]
+				},
+				{
+					"localized_name": "MASK",
+					"name": "MASK",
+					"type": "MASK",
+					"links": null
+				}
+			],
+			"properties": {
+				"Node name for S&R": "LoadImage"
+			},
+			"widgets_values": [
+				"file.png",
+				"image"
+			]
+		},
+		{
+			"id": 2,
+			"type": "Pause",
+			"pos": [
+				1050.9790413957323,
+				329.98337340491526
+			],
+			"size": [
+				270,
+				106
+			],
+			"flags": {},
+			"order": 1,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 2
+				},
+				{
+					"localized_name": "force_pause",
+					"name": "force_pause",
+					"type": "BOOLEAN",
+					"widget": {
+						"name": "force_pause"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						1,
+						10
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "Pause"
+			},
+			"widgets_values": [
+				false,
+				"",
+				""
+			]
+		},
+		{
+			"id": 10,
+			"type": "PreviewImage",
+			"pos": [
+				1703.2000732421875,
+				495.1999969482422
+			],
+			"size": [
+				268.84875914263444,
+				318.068926130106
+			],
+			"flags": {},
+			"order": 5,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "images",
+					"name": "images",
+					"type": "IMAGE",
+					"link": 13
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "PreviewImage"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 12,
+			"type": "ImageInvert",
+			"pos": [
+				1528.6296297441513,
+				495.9913307112688
+			],
+			"size": [
+				140,
+				26
+			],
+			"flags": {},
+			"order": 4,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "IMAGE",
+					"link": 12
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						13
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "ImageInvert"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 9,
+			"type": "Pause",
+			"pos": [
+				1707.1028335456458,
+				330.6981490426049
+			],
+			"size": [
+				270,
+				106
+			],
+			"flags": {},
+			"order": 3,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 10
+				},
+				{
+					"localized_name": "force_pause",
+					"name": "force_pause",
+					"type": "BOOLEAN",
+					"widget": {
+						"name": "force_pause"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						12
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "Pause"
+			},
+			"widgets_values": [
+				false,
+				"",
+				""
+			]
+		}
+	],
+	"links": [
+		[
+			1,
+			2,
+			0,
+			1,
+			0,
+			"IMAGE"
+		],
+		[
+			2,
+			3,
+			0,
+			2,
+			0,
+			"*"
+		],
+		[
+			10,
+			2,
+			0,
+			9,
+			0,
+			"*"
+		],
+		[
+			12,
+			9,
+			0,
+			12,
+			0,
+			"IMAGE"
+		],
+		[
+			13,
+			12,
+			0,
+			10,
+			0,
+			"IMAGE"
+		]
+	],
+	"groups": [],
+	"config": {},
+	"extra": {
+		"ds": {
+			"scale": 1,
+			"offset": [
+				0,
+				0
+			]
+		}
+	},
+	"version": 0.4
+}

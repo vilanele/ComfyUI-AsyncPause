@@ -1,0 +1,209 @@
+{
+	"id": "4a0c54b1-e363-43a0-8bac-aa3afd858bf3",
+	"revision": 0,
+	"last_node_id": 6,
+	"last_link_id": 8,
+	"nodes": [
+		{
+			"id": 4,
+			"type": "LoadImage",
+			"pos": [
+				501.4269737456575,
+				378.5815978257027
+			],
+			"size": [
+				292.90847274067664,
+				380.75503967159443
+			],
+			"flags": {},
+			"order": 0,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "COMBO",
+					"widget": {
+						"name": "image"
+					},
+					"link": null
+				},
+				{
+					"localized_name": "choose file to upload",
+					"name": "upload",
+					"type": "IMAGEUPLOAD",
+					"widget": {
+						"name": "upload"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						7
+					]
+				},
+				{
+					"localized_name": "MASK",
+					"name": "MASK",
+					"type": "MASK",
+					"links": null
+				}
+			],
+			"properties": {
+				"Node name for S&R": "LoadImage"
+			},
+			"widgets_values": [
+				"file (1).png",
+				"image"
+			]
+		},
+		{
+			"id": 5,
+			"type": "NotifyAudioPassthrough",
+			"pos": [
+				1344.0363842967672,
+				378.4598407010227
+			],
+			"size": [
+				265.83938289410344,
+				112
+			],
+			"flags": {},
+			"order": 2,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 8
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						5
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "NotifyAudioPassthrough"
+			},
+			"widgets_values": [
+				"echo",
+				""
+			]
+		},
+		{
+			"id": 6,
+			"type": "ImageInvert",
+			"pos": [
+				1018.3331147919496,
+				377.7504593525214
+			],
+			"size": [
+				140,
+				26
+			],
+			"flags": {},
+			"order": 1,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "IMAGE",
+					"link": 7
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						8
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "ImageInvert"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 1,
+			"type": "PreviewImage",
+			"pos": [
+				1794.5771882937815,
+				377.95208207455494
+			],
+			"size": [
+				289.128673920261,
+				376.2144673746328
+			],
+			"flags": {},
+			"order": 3,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "images",
+					"name": "images",
+					"type": "IMAGE",
+					"link": 5
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "PreviewImage"
+			},
+			"widgets_values": []
+		}
+	],
+	"links": [
+		[
+			5,
+			5,
+			0,
+			1,
+			0,
+			"IMAGE"
+		],
+		[
+			7,
+			4,
+			0,
+			6,
+			0,
+			"IMAGE"
+		],
+		[
+			8,
+			6,
+			0,
+			5,
+			0,
+			"*"
+		]
+	],
+	"groups": [],
+	"config": {},
+	"extra": {
+		"ds": {
+			"scale": 1,
+			"offset": [
+				0,
+				0
+			]
+		}
+	},
+	"version": 0.4
+}

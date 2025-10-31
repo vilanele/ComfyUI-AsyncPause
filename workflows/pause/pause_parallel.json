@@ -1,0 +1,314 @@
+{
+	"id": "2fcdd5ff-ea35-419d-abaf-19b56aa1d874",
+	"revision": 0,
+	"last_node_id": 7,
+	"last_link_id": 6,
+	"nodes": [
+		{
+			"id": 2,
+			"type": "ImageInvert",
+			"pos": [
+				1460.206334377213,
+				636.0884340850482
+			],
+			"size": [
+				140,
+				26
+			],
+			"flags": {},
+			"order": 4,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "IMAGE",
+					"link": 2
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						5
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "ImageInvert"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 5,
+			"type": "PreviewImage",
+			"pos": [
+				1642.8097130491406,
+				637.28122878764
+			],
+			"size": [
+				266.62959253505596,
+				314.18523556948867
+			],
+			"flags": {},
+			"order": 5,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "images",
+					"name": "images",
+					"type": "IMAGE",
+					"link": 5
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "PreviewImage"
+			},
+			"widgets_values": []
+		},
+		{
+			"id": 3,
+			"type": "Pause",
+			"pos": [
+				1142.3895965608422,
+				241.2145860678816
+			],
+			"size": [
+				270,
+				106
+			],
+			"flags": {},
+			"order": 1,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 3
+				},
+				{
+					"localized_name": "force_pause",
+					"name": "force_pause",
+					"type": "BOOLEAN",
+					"widget": {
+						"name": "force_pause"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						1
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "Pause"
+			},
+			"widgets_values": [
+				false,
+				"",
+				""
+			]
+		},
+		{
+			"id": 4,
+			"type": "Pause",
+			"pos": [
+				1144.4589949386782,
+				637.2812287876401
+			],
+			"size": [
+				270,
+				106
+			],
+			"flags": {},
+			"order": 2,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"link": 6
+				},
+				{
+					"localized_name": "force_pause",
+					"name": "force_pause",
+					"type": "BOOLEAN",
+					"widget": {
+						"name": "force_pause"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "any",
+					"name": "any",
+					"type": "*",
+					"links": [
+						2
+					]
+				}
+			],
+			"properties": {
+				"Node name for S&R": "Pause"
+			},
+			"widgets_values": [
+				false,
+				"",
+				""
+			]
+		},
+		{
+			"id": 6,
+			"type": "LoadImage",
+			"pos": [
+				615.9030689270132,
+				423.8789232290886
+			],
+			"size": [
+				274.080078125,
+				314
+			],
+			"flags": {},
+			"order": 0,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "image",
+					"name": "image",
+					"type": "COMBO",
+					"widget": {
+						"name": "image"
+					},
+					"link": null
+				},
+				{
+					"localized_name": "choose file to upload",
+					"name": "upload",
+					"type": "IMAGEUPLOAD",
+					"widget": {
+						"name": "upload"
+					},
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"localized_name": "IMAGE",
+					"name": "IMAGE",
+					"type": "IMAGE",
+					"links": [
+						3,
+						6
+					]
+				},
+				{
+					"localized_name": "MASK",
+					"name": "MASK",
+					"type": "MASK",
+					"links": null
+				}
+			],
+			"properties": {
+				"Node name for S&R": "LoadImage"
+			},
+			"widgets_values": [
+				"file.png",
+				"image"
+			]
+		},
+		{
+			"id": 1,
+			"type": "PreviewImage",
+			"pos": [
+				1642.9137557636454,
+				242.71316738529794
+			],
+			"size": [
+				266.62959253505596,
+				314.18523556948867
+			],
+			"flags": {},
+			"order": 3,
+			"mode": 0,
+			"inputs": [
+				{
+					"localized_name": "images",
+					"name": "images",
+					"type": "IMAGE",
+					"link": 1
+				}
+			],
+			"outputs": [],
+			"properties": {
+				"Node name for S&R": "PreviewImage"
+			},
+			"widgets_values": []
+		}
+	],
+	"links": [
+		[
+			1,
+			3,
+			0,
+			1,
+			0,
+			"IMAGE"
+		],
+		[
+			2,
+			4,
+			0,
+			2,
+			0,
+			"IMAGE"
+		],
+		[
+			3,
+			6,
+			0,
+			3,
+			0,
+			"*"
+		],
+		[
+			5,
+			2,
+			0,
+			5,
+			0,
+			"IMAGE"
+		],
+		[
+			6,
+			6,
+			0,
+			4,
+			0,
+			"*"
+		]
+	],
+	"groups": [],
+	"config": {},
+	"extra": {
+		"ds": {
+			"scale": 1,
+			"offset": [
+				0,
+				0
+			]
+		}
+	},
+	"version": 0.4
+}
